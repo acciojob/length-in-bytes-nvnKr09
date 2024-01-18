@@ -1,5 +1,10 @@
 const byteSize = (str) => {
-  // write your code here
+  // Use the TextEncoder API to encode the string into bytes
+  const encoder = new TextEncoder();
+  const bytes = encoder.encode(str);
+
+  // Return the size of the bytes array
+  return bytes.length;
 };
 
 // Do not change the code below
